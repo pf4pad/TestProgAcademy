@@ -15,8 +15,7 @@ count.addEventListener('click', function () {
   if (isNaN(rate) || isNaN(amount)) {
     alert('Введите число')
     amount = 21000;
-    rate = 2
-    1000;
+    rate = 1000;
   }
   let sum = amount / rate;
 
