@@ -6,16 +6,18 @@ console.log(amount)
 console.log(rate)
 
 count.addEventListener('click', function () {
-  const rate = document.getElementById('rate').value;
 
-  const amount = document.getElementById('amount').value;
+  let amount = document.getElementById('amount').value;
+  let rate = document.getElementById('rate').value;
+
   console.log(amount)
   console.log(rate)
 
   if (isNaN(rate) || isNaN(amount)) {
-    alert('Введите число')
-    amount = 21000;
-    rate = 1000;
+    alert('Введите число');
+    document.getElementById('rate').value = 21000;
+    document.getElementById('amount').value = 1000;
+
   }
   let sum = amount / rate;
 
