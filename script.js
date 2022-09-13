@@ -6,9 +6,9 @@ console.log(amount)
 console.log(rate)
 
 count.addEventListener('click', function () {
-  const rate = Number(document.getElementById('rate').value);
+  const rate = document.getElementById('rate').value;
 
-  const amount = Number(document.getElementById('amount').value);
+  const amount = document.getElementById('amount').value;
   console.log(amount)
   console.log(rate)
 
